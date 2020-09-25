@@ -1,8 +1,14 @@
 /***** base styles *****/
 
+html {
+    font-size: 16px;
+}
 body {
     font-family: 'montserrat', sans-serif;
-    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
 }
 
 /***** utilities *****/
@@ -11,47 +17,58 @@ body {
 /****** grid ******/
 
 .container {
-    width: 1200px;
-    margin: 0 auto;
+    max-width: 1200px;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 /***** header *****/
 
 header {
-    height: 110px;
-    margin: 0 auto;
+    width: 100%;
     border-bottom: 3px solid #77a466;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
 }
+
 header h1 {
     color: #000000;
-    float: left;
     font-family: 'montserrat', sans-serif;
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: 700;
-    line-height: 23px;
-    margin: 0px;
-    padding: 38px 0;
+    line-height: 1.4375em;
     text-transform: uppercase;
+    margin: 0;
+    width: 100%;
+    padding: 38px 20px 20px 20px;
+    border-bottom: 3px solid #77a466;
 }
 header h1 span {
     color:#77a466;
 }
 
 header nav {
-    float: right;
-    padding: 46px 0px;
+    padding: 20px 0;
+    width: 100%;
 }
+
 header nav ul {
     margin: 0;
     padding: 0;
 }
 header nav ul li {
-    display: inline;
     font-family: 'montserrat', sans-serif;
-    font-size: 14px;
+    font-size: .875em;
     font-weight: 700;
-    padding: 0 10px;
     text-transform: uppercase;
+    padding: 10px 0;
+    list-style: none;
 }
 header nav ul li a {
     color: #77a466;
@@ -62,25 +79,30 @@ header nav ul li a {
 
 .top-section,
 .bottom-section {
-    margin: 0 auto;
-    clear: both;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
 }
 
 .main-image img {
+    width: 100%;
     border-bottom: 3px solid #77a466;
 } 
 .main-title h3 {
     color: #77a466;
     font-family: 'montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: 700;
     text-transform: uppercase;
+    padding: 5px 0;
 }
 .main title p {
     color: black;
     font-family: 'montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
+    padding: 0;
 }
 
 /***** bottom-section *****/
@@ -89,71 +111,59 @@ header nav ul li a {
 .section-two,
 .section-three {
     border-top: 1px solid #eeeeee;
-    width: 399px;
-    height: auto;
-    float: left;
+    width: 100%;
+
 }
-.section-one h4 {
-    color: black;
-    font-family: 'montserrat', sans-serif;
-    font-size: 12px;
-    font-weight: 700;
-    padding: 10px 0;
-    text-transform: uppercase;
-}
-.section-two {
-    border-right: 1px solid #eeeeee;
-    border-left: 1px solid #eeeeee;
-}
+.section-one h4,
 .section-two h4,
 .section-three h4 {
     color: #000000;
     font-family: 'montserrat', sans-serif;
-    font-size: 12px;
     font-weight: 700;
-    padding: 10px 30px;
     text-transform: uppercase;
 }
 
 .menu {
    list-style: none;
-   padding: 0; 
+   padding: 0;
 }
 .menu li {
     color: #77a466;
     font-family: 'montserrat', sans-serif;
-    font-size: 16px;
     font-weight: 400;
-    padding: 10px;
+    padding: 10px 0;
 }
 .reviews {
     color: #000000;
     font-family: 'montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    padding: 10px 30px;
-    text-align: justify;
 
 }
  .address {
     color: #000000;
     font-family: 'montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 21px;
-    padding: 10px 30px;
+    line-height: 1.3125em;
 }
 
 /***** footer *****/
 
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
 footer h4 {
     border-top: 1px solid #eeeeee;
-    clear: both;
     color: #000000;
     font-family: 'montserrat', sans-serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 700;
-    line-height: 23px;
+    line-height: 1.4375em;
     text-align: center;
     text-transform: uppercase;
     padding: 30px 0;
@@ -161,8 +171,8 @@ footer h4 {
 footer h4 span {
     color: #77a466;
     font-family: 'galada', serif;
-    font-size: 16px;
+    font-size: 1em;
     font-weight: 400;
-    line-height: 23px;
+    line-height: 1.4375em;
     text-transform: none;
 }
