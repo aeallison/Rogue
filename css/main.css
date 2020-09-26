@@ -34,7 +34,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-flow: wrap;
+    flex-flow: row wrap;
 }
 
 header h1 {
@@ -42,7 +42,6 @@ header h1 {
     font-family: 'montserrat', sans-serif;
     font-size: 1.875em;
     font-weight: 700;
-    line-height: 1.4375em;
     text-transform: uppercase;
     margin: 0;
     width: 100%;
@@ -95,6 +94,7 @@ header nav ul li a {
     font-size: 1.125em;
     font-weight: 700;
     text-transform: uppercase;
+    text-align: left;
     padding: 5px 0;
 }
 .main title p {
@@ -102,7 +102,9 @@ header nav ul li a {
     font-family: 'montserrat', sans-serif;
     font-size: 1em;
     font-weight: 400;
+    line-height: 1.5625em;
     padding: 0;
+
 }
 
 /***** bottom-section *****/
@@ -138,6 +140,7 @@ header nav ul li a {
     font-family: 'montserrat', sans-serif;
     font-size: 1em;
     font-weight: 400;
+    line-height: 1.3125em;
 
 }
  .address {
@@ -145,12 +148,13 @@ header nav ul li a {
     font-family: 'montserrat', sans-serif;
     font-size: 1em;
     font-weight: 400;
-    line-height: 1.3125em;
+    line-height: 1.5em;
 }
 
 /***** footer *****/
 
 footer {
+    border-top: 3px solid #eeeeee;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -158,21 +162,62 @@ footer {
     flex-flow: row wrap;
 }
 footer h4 {
-    border-top: 1px solid #eeeeee;
     color: #000000;
     font-family: 'montserrat', sans-serif;
     font-size: 1em;
     font-weight: 700;
-    line-height: 1.4375em;
     text-align: center;
     text-transform: uppercase;
-    padding: 30px 0;
 }
 footer h4 span {
     color: #77a466;
     font-family: 'galada', serif;
-    font-size: 1em;
+    font-size: .875em;
     font-weight: 400;
-    line-height: 1.4375em;
     text-transform: none;
+}
+
+/* MEDIA QUERIES */
+
+@media all and (min-width: 768px) {
+    /* tablet styles here */
+    .bottom-section {
+        justify-content: space-between;
+        align-items: flex-start;
+        border-top: 1px solid #eeeeee;
+    }
+    .section-one,
+    .section-two,
+    .section-three {
+        flex-basis: 30%;
+        border-top: none;
+    }
+    .section-two {
+        border-left: 1px solid #eeeeee;
+        border-right: 1px solid #eeeeee;
+        padding: 0 20px;
+    }
+}
+
+@media all and (min-width: 1200px) {
+    /* desktop styles here */
+    header {
+        justify-content: space-between;
+    }
+
+    header h1 {
+        width: 30%;
+        padding: 0;
+        border-bottom: none;
+        text-align: left;
+    }
+
+    header nav {
+        width: 40%;
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
 }
